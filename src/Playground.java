@@ -5,13 +5,12 @@ public class Playground {
         Scanner scan = new Scanner(System.in);
         String s1, s2;
         s1 = scan.next();
-        s2 = scan.next();
         int a = Integer.parseInt(s1);
-        int b = Integer.parseInt(s2);
-        System.out.println(a + "," + b);
-        //System.out.println("두 수의 합은 " + (a + b) + "입니다");
-        System.out.printf("%d와 %d의 합은 %d입니다",a,b, a+b);
+        int[] month = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        System.out.printf("%d월은 \n%d일까지 있습니다", a, month[a-1]);
         scan.close();
+
+
     }
 }
 
